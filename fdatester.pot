@@ -1,0 +1,175 @@
+# Messages for fdatester
+# Copyright (C) 2015 Willams de Lima
+# This file is distributed under the same license as the fdatester package.
+# Willams de Lima <wlcosta.sh@gmail.com>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fdatester 1.2\n"
+"Report-Msgid-Bugs-To: <wlcosta.sh@gmail.com>\n"
+"POT-Creation-Date: 2015-06-18 17:37-0300\n"
+"PO-Revision-Date: 2015-06-18 18:32-0300\n"
+"Last-Translator: Willams de Lima <wlcosta.sh@gmail.com>\n"
+"Language-Team: PT-BR\n"
+"Language: Português do Brasil"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: fdatester.py:37
+#, python-format
+msgid "FT: %s with %s"
+msgstr "FT: %s com %s"
+
+#: fdatester.py:43 fdatester.py:73
+#, python-format
+msgid "FT: %s with %s results into %s"
+msgstr "FT: %s com %s resulta em %s"
+
+#: fdatester.py:68
+#, python-format
+msgid "Testing word: %s"
+msgstr "Testando palavra: %s"
+
+#: fdatester.py:77
+#, python-format
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"The string w = %s  was accepted by the automaton!"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"A palavra w = %s  foi aceita pelo autômato!"
+
+#: fdatester.py:79
+#, python-format
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"The string w = %s  was [NOT] accepted by the automaton!"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"A palavra w = %s  NÃO foi aceita pelo autômato!"
+
+#: fdatester.py:93
+msgid ""
+"An automaton is composed by an alphabet, a set of states, a starting state "
+"and a set of accepting states."
+msgstr ""
+"Um autômato é composto por um alfabeto, um conjunto de estados, um estado inicial "
+"e um conjunto de estados finais."
+
+#: fdatester.py:95
+#, python-brace-format
+msgid ""
+"\n"
+"Let's start by adding symbols to our alphabet {A}."
+msgstr ""
+"\n"
+"Vamos iniciar adicionando símbolos ao alfabeto {A}."
+
+#: fdatester.py:96
+msgid ""
+"\n"
+"Insert all the symbols separated by comma (,). For example::       a, b"
+msgstr ""
+"\n"
+"Insira todos os símbolos separados por vírgula (,). Por exemplo::       a, b"
+
+#: fdatester.py:97
+#, python-brace-format
+msgid "Insert, now, the symbols of the alphabet {A}: "
+msgstr "Insira, agora, os símbolos do alfabeto {A}: "
+
+#: fdatester.py:102
+#, python-brace-format
+msgid ""
+"\n"
+"Now let's add our set of states {Q}."
+msgstr ""
+"\n"
+"Agora, vamos adicionar nosso conjunto de estados {Q}."
+
+#: fdatester.py:103
+msgid ""
+"\n"
+"Insert all states separated by comma (,). For example::    q0, q1, q2, q3"
+msgstr ""
+"\n"
+"Insira todos os estados separados por vírgula (,). Por exemplo::    q0, q1, q2, q3"
+
+#: fdatester.py:104
+#, python-brace-format
+msgid "Insert, now, the states of {Q}: "
+msgstr "Insira, agora, os estados de {Q}: "
+
+#: fdatester.py:110
+msgid ""
+"\n"
+"These are your states: "
+msgstr ""
+"\n"
+"Estes são seus estados: "
+
+#: fdatester.py:112
+msgid ""
+"\n"
+"Select one state from this list to be the starting state."
+msgstr ""
+"\n"
+"Selecione um estado dessa lista para ser seu estado inicial."
+
+#: fdatester.py:116
+msgid ""
+"\n"
+"Invalid."
+msgstr ""
+"\n"
+"Inválido."
+
+#: fdatester.py:119
+#, python-brace-format
+msgid ""
+"\n"
+"Now let's add our set of accepting states {F}."
+msgstr ""
+"\n"
+"Agora, vamos adicionar nosso conjunto de estados finais {F}."
+
+#: fdatester.py:120
+msgid ""
+"\n"
+"Insert all states separated by comma (,). For example::    q0, q1"
+msgstr ""
+"\n"
+"Insira todos os estados separados por vírgula (,). Por exemplo::    q0, q1"
+
+#: fdatester.py:121
+#, python-brace-format
+msgid ""
+"\n"
+"Remember that this set needs to be a subset of {Q}, otherwise you won't get "
+"a result."
+msgstr ""
+"\n"
+"Lembre-se que este conjunto precisa ser um subconjunto de {Q}, caso contrário você não receberá "
+"um resultado."
