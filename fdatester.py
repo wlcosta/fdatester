@@ -2,6 +2,7 @@ __author__ = 'Willams de Lima a.k.a cyborg'
 
 # coding = Unicode
 
+import tkinter
 import time
 import gettext
 t = gettext.translation('fdatester', localedir='locale', languages=['pt_BR'])
