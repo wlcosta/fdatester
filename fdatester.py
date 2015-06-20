@@ -13,8 +13,6 @@ _ = t.gettext
 
 def M(alphabet, sos, ss, acs):
 
-    #static for now
-
     #since we have 2 symbols in the alphabet and 3 states, we'll have 2x3 "slots" in our transition function.
 
 
@@ -26,37 +24,28 @@ def M(alphabet, sos, ss, acs):
 
     '''
 
-    #starting the array...
 
     Matrix = [[0 for x in range(len(alphabet))] for x in range (len(sos))]
     i = 0
     j = 0
     for i in range(len(sos)):
        for j in range(len(alphabet)):
-            #print(_("FT: ", sos[i], " with ", alphabet[j]))
             print(_("FT: %s with %s") % (sos[i], alphabet[j]))
             Matrix[i][j] = input(">>> ")
     i = j = 0
     for i in range(len(sos)):
         for j in range(len(alphabet)):
-            #print(_("FT: ", sos[i], " with ", alphabet[j], " results into ", Matrix[i][j]))
             print(_("FT: %s with %s results into %s") % (sos[i], alphabet[j], Matrix[i][j]))
 
 
     def getPositionAlphabet(letter):
-        #print(_(letter)
         for k in range(len(alphabet)):
-            #print(_(k)
-            #print(_(alphabet[k])
             if letter == alphabet[k]:
                 return k
                 break
 
     def getPositionState(actual_state):
-        #print(_(actual_state)
         for q in range(len(sos)):
-            #print(_(q)
-            #print(_(sos[q])
             if actual_state == sos[q]:
                 return q
                 break
@@ -68,8 +57,7 @@ def M(alphabet, sos, ss, acs):
         print(_("Testing word: %s" % (w)))
         i = 0
         for i in range(len(w)):
-            #remove me
-            #print(_("FT: ", sos[getPositionState(current_state)], " with ", alphabet[getPositionAlphabet(w[i:i+1])], " results into ", Matrix[getPositionState(current_state)][getPositionAlphabet(w[i:i+1])]))
+
             print(_("FT: %s with %s results into %s") % (sos[getPositionState(current_state)], alphabet[getPositionAlphabet(w[i:i+1])], Matrix[getPositionState(current_state)][getPositionAlphabet(w[i:i+1])]))
             current_state = Matrix[getPositionState(current_state)][getPositionAlphabet(w[i:i+1])]
             time.sleep(2)
@@ -80,16 +68,6 @@ def M(alphabet, sos, ss, acs):
         if input("Test another word? [Yes/No]") == "no": break
 
 def main():
-    #Starts translation. Ignore this.
-
-
-    
-
-    #
-    '''alphabet = ['a', 'b']
-    sos = ['q0', 'q1', 'q2']
-    ss = ['q0']
-    acs = ['q2']'''
     print(_("An automaton is composed by an alphabet, a set of states, a starting state and a set of accepting states."))
 
     print(_("\nLet's start by adding symbols to our alphabet {A}."))
